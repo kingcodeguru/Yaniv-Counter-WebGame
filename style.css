@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: #abb2bf;
+    align-items: center;
+}
+
+h1 {
+    color: #61afef;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #1010ff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.placement {
+    margin-left: 10px;
+    color: gray;
+    font-size: 3rem;
+}
+.player-name {
+    font-family: Pacifico;
+    color: burlywood;
+    font-size: 2rem;
+}
+.input-points {
+    background: none;
+    color: lightgray;
+    font-size: 1.5rem;
+}
+.sum-player-points {
+    font-size: 1rem;
+    display: block;
+    width: fit-content;
+    width: 263px;
+    margin-top: 5px;
+}
+.player-list {
+    display: grid;
+    grid-template-columns: repeat(1, 800px); /* 3 columns, each 100px wide */
+    gap: 5px;
+    background-color: #3a404b;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.total-points {
+    font-size: 2rem;
+}
+
+.cell {
+    display: grid;
+    grid-template-columns: 125px 250px 100px 1fr;
+    gap: 15px;
+    height: 100px;
+    background-color: #4b5263;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #5c6370;
+}
+
+.cell.playerX {
+    color: #e06c75; /* Reddish for X */
+}
+
+.cell.playerO {
+    color: #98c379; /* Greenish for O */
+}
+
+.game-status {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #c678dd;
+}
+
+#restart-button {
+padding: 10px 20px;
+font-size: 1.1em;
+background-color: #61afef;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+background-color: #52a0e0;
+}

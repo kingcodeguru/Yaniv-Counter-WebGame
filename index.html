@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaniv Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Yaniv Counter</h1>
+    <p>This web application counts points according to the rules of the beautiful and fun game - YANIV!</p>
+    <div class="container">
+        <input type="text" id="getName" name="username" placeholder="Enter a player's name">
+        <button id="addPlayer" class="my-custom-button">Add player</button>
+        <button class="sum-player-points">SUM</button>
+    </div>
+    <div id="player-list" class="player-list">
+        <div class="cell" data-cell-index="0">
+            <div class="placement">1st</div>
+            <div class="player-name">Liel Avraham</div>
+            <input class="input-points" type="text" id="inputPoints" name="inputPoints" 
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            <div class="total-points">Total: </div>
+        </div>
+        <div class="cell" data-cell-index="1"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
