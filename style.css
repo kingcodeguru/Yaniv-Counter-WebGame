@@ -59,7 +59,7 @@ h2 {
 
 .cell {
     display: grid;
-    grid-template-columns: 125px 250px 100px 1fr;
+    grid-template-columns: 125px 250px 150px 1fr;
     gap: 15px;
     height: 100px;
     background-color: #4b5263;
